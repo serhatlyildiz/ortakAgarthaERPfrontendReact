@@ -38,9 +38,9 @@ function Cover() {
       <Card>
         <MDBox
           variant="gradient"
-          bgColor="info"
+          bgColor="success"
           borderRadius="lg"
-          coloredShadow="success"
+          coloredShadow="dark"
           mx={2}
           mt={-3}
           p={3}
@@ -54,7 +54,7 @@ function Cover() {
             Enter your email and password to register
           </MDTypography>
         </MDBox>
-        <MDBox pt={4} pb={3} px={3}>
+        <MDBox pt={4} pb={3} px={3} bgColor="#c3a201">
           <MDBox component="form" role="form">
             <MDBox mb={2}>
               <MDInput type="text" label="Name" variant="standard" fullWidth />
@@ -88,12 +88,12 @@ function Cover() {
             </MDBox>
             <MDBox mt={4} mb={1}>
               <MDButton variant="gradient" color="info" fullWidth>
-                sign in
+                Kayıt ol
               </MDButton>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Already have an account?{" "}
+                Hesabın mı var?{" "}
                 <MDTypography
                   component={Link}
                   to="/authentication/sign-in"
@@ -102,7 +102,7 @@ function Cover() {
                   fontWeight="medium"
                   textGradient
                 >
-                  Sign In
+                  Giriş yap!
                 </MDTypography>
               </MDTypography>
             </MDBox>
